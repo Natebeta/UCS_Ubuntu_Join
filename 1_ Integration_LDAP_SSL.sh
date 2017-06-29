@@ -1,6 +1,3 @@
-# Become root
-sudo bash
-
 # Set the IP address of the UCS DC Master, 192.168.0.3 in this example
 export MASTER_IP=192.168.0.3
 
@@ -13,13 +10,6 @@ chmod 660 /etc/univention/ucr_master
 
 echo "${MASTER_IP} ${ldap_master}" >>/etc/hosts
 
-# Exit sudo bash
-exit
-
-
-# Become root
-sudo bash
-
 # Set the IP address of the UCS DC Master, 192.168.0.3 in this example
 export MASTER_IP=192.168.0.3
 
@@ -31,6 +21,3 @@ chmod 660 /etc/univention/ucr_master
 . /etc/univention/ucr_master
 
 echo "${MASTER_IP} ${ldap_master}" >>/etc/hosts
-
-# Exit sudo bash
-exit
