@@ -25,7 +25,7 @@ systemctl disable avahi-daemon.service
 sed -i 's|start on (|start on (never and |' /etc/init/avahi-daemon.conf
 
 # Synchronize the time with the UCS system
-apt get install ntpdate
+apt-get install -y ntpdate
 ntpdate -bu $ldap_master
 
 # Test Kerberos
