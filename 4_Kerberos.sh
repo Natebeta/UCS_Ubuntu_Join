@@ -36,3 +36,6 @@ rsh Administrator@$ldap_master ls /etc/univention
 
 # Destroy the kerberos ticket
 kdestroy
+
+#Finally
+exit
