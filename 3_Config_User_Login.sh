@@ -9,12 +9,6 @@ __EOF__
 
 DEBIAN_FRONTEND=noninteractive pam-auth-update
 
-exit
-
-
-# Become root
-sudo bash
-
 echo '*;*;*;Al0000-2400;audio,cdrom,dialout,floppy,plugdev,adm' \
    >>/etc/security/group.conf
 
@@ -29,11 +23,6 @@ __EOF__
 
 DEBIAN_FRONTEND=noninteractive pam-auth-update
 
-exit
-
-
-# Become root
-sudo bash
 
 # Add a field for a user name, disable user selection at the login screen
 mkdir /etc/lightdm/lightdm.conf.d
