@@ -32,7 +32,7 @@ ntpdate -bu $ldap_master
 kinit Administrator
 
 # Requires domain password
-krsh Administrator@$ldap_master ls /etc/univention
+rsh Administrator@$ldap_master ls /etc/univention
 
 # Destroy the kerberos ticket
 kdestroy
