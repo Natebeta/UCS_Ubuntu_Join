@@ -1,6 +1,3 @@
-# Become root
-sudo bash
-
 cat >/usr/share/pam-configs/ucs_mkhomedir <<__EOF__
 Name: activate mkhomedir
 Default: yes
@@ -45,5 +42,3 @@ cat >>/etc/lightdm/lightdm.conf.d/99-show-manual-userlogin.conf <<__EOF__
 greeter-show-manual-login=true
 greeter-hide-users=true
 __EOF__
-
-exit
