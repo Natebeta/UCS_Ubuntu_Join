@@ -1,6 +1,3 @@
-#Become root
-sudo bash
-
 #Set the IP address of the UCS DC Master, 192.168.0.3 in this example
 export MASTER_IP=172.16.5.176
 
