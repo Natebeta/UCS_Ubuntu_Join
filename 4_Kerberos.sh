@@ -21,7 +21,7 @@ $kerberos_realm = {
 __EOF__
 
 # Stop and disable the avahi daemon
-stop avahi-daemon
+systemctl disable avahi-daemon.service
 sed -i 's|start on (|start on (never and |' /etc/init/avahi-daemon.conf
 
 # Synchronize the time with the UCS system
