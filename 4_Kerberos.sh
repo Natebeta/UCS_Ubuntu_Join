@@ -1,6 +1,3 @@
-# Become root
-sudo bash
-
 # Set some environment variables
 . /etc/univention/ucr_master
 
@@ -38,5 +35,3 @@ krsh Administrator@$ldap_master ls /etc/univention
 
 # Destroy the kerberos ticket
 kdestroy
-
-exit
