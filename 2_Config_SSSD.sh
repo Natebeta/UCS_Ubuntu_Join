@@ -78,4 +78,4 @@ __EOF__
 auth-client-config -n -a -p sss
 
 # Restart sssd
-restart sssd
+systemctl restart sssd
