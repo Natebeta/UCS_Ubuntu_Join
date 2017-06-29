@@ -1,6 +1,3 @@
-# Become root
-sudo bash
-
 # Set some environment variables
 . /etc/univention/ucr_master
 
@@ -82,6 +79,3 @@ auth-client-config -n -a -p sss
 
 # Restart sssd
 restart sssd
-
-# Exit sudo bash
-exit
